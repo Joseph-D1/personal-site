@@ -113,37 +113,7 @@
         </div>
         <div class="hero-image">
           <div class="hero-placeholder">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="80" fill="url(#gradient)" />
-              <defs>
-                <linearGradient
-                  id="gradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop
-                    offset="0%"
-                    style="stop-color: var(--primary-color); stop-opacity: 1"
-                  />
-                  <stop
-                    offset="100%"
-                    style="stop-color: var(--secondary-color); stop-opacity: 1"
-                  />
-                </linearGradient>
-              </defs>
-              <text
-                x="100"
-                y="110"
-                font-size="60"
-                fill="white"
-                text-anchor="middle"
-                font-weight="bold"
-              >
-                JD
-              </text>
-            </svg>
+            <img :src="profileImage" alt="Joseph Dodd" class="profile-image" />
           </div>
         </div>
       </div>
@@ -153,6 +123,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import profileImage from "@/assets/images/joeFlorence.jpeg";
 
 defineProps({
   theme: {
@@ -539,9 +510,11 @@ onUnmounted(() => {
   }
 }
 
-.hero-placeholder svg {
+.profile-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
   filter: drop-shadow(0 10px 30px rgba(99, 102, 241, 0.3));
 }
 
