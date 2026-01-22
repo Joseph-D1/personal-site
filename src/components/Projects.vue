@@ -23,7 +23,7 @@
                 {{ tech }}
               </span>
             </div>
-            <div class="project-links">
+            <!-- <div class="project-links">
               <a
                 v-if="project.liveUrl"
                 :href="project.liveUrl"
@@ -40,7 +40,7 @@
               >
                 GitHub
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -54,24 +54,26 @@ defineProps({
     type: Array,
     default: () => [
       {
-        title: 'Project Title',
-        description: 'A brief description of your project, what it does, and the technologies used.',
-        technologies: ['Vue.js', 'JavaScript', 'CSS'],
-        liveUrl: 'https://example.com',
-        githubUrl: 'https://github.com/example',
-        imageUrl: ''
+        title: "Project Title",
+        description:
+          "A brief description of your project, what it does, and the technologies used.",
+        technologies: ["Vue.js", "JavaScript", "CSS"],
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        imageUrl: "",
       },
       {
-        title: 'Another Project',
-        description: 'Description of another project showcasing your skills and experience.',
-        technologies: ['React', 'Node.js', 'MongoDB'],
-        liveUrl: '',
-        githubUrl: 'https://github.com/example',
-        imageUrl: ''
-      }
-    ]
-  }
-})
+        title: "Another Project",
+        description:
+          "Description of another project showcasing your skills and experience.",
+        technologies: ["React", "Node.js", "MongoDB"],
+        liveUrl: "",
+        githubUrl: "https://github.com/example",
+        imageUrl: "",
+      },
+    ],
+  },
+});
 </script>
 
 <style scoped>
@@ -96,14 +98,18 @@ defineProps({
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   border-radius: 2px;
 }
 
@@ -132,7 +138,11 @@ defineProps({
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
 }
 
 .project-image img {

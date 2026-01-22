@@ -22,7 +22,7 @@
                   :style="{ width: skill.level + '%' }"
                 ></div>
               </div>
-              <span class="skill-level">{{ skill.level }}%</span>
+              <!-- <span class="skill-level">{{ skill.level }}%</span> -->
             </div>
           </div>
         </div>
@@ -37,33 +37,33 @@ defineProps({
     type: Array,
     default: () => [
       {
-        name: 'Frontend',
+        name: "Frontend",
         skills: [
-          { name: 'Vue.js', level: 90 },
-          { name: 'JavaScript', level: 85 },
-          { name: 'HTML/CSS', level: 95 },
-          { name: 'React', level: 75 }
-        ]
+          { name: "Vue.js", level: 90 },
+          { name: "JavaScript", level: 85 },
+          { name: "HTML/CSS", level: 95 },
+          { name: "React", level: 75 },
+        ],
       },
       {
-        name: 'Backend',
+        name: "Backend",
         skills: [
-          { name: 'Node.js', level: 80 },
-          { name: 'Python', level: 75 },
-          { name: 'Database', level: 70 }
-        ]
+          { name: "Node.js", level: 80 },
+          { name: "Python", level: 75 },
+          { name: "Database", level: 70 },
+        ],
       },
       {
-        name: 'Tools & Others',
+        name: "Tools & Others",
         skills: [
-          { name: 'Git', level: 85 },
-          { name: 'Docker', level: 60 },
-          { name: 'AWS', level: 65 }
-        ]
-      }
-    ]
-  }
-})
+          { name: "Git", level: 85 },
+          { name: "Docker", level: 60 },
+          { name: "AWS", level: 65 },
+        ],
+      },
+    ],
+  },
+});
 </script>
 
 <style scoped>
@@ -88,14 +88,18 @@ defineProps({
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   border-radius: 2px;
 }
 
@@ -161,7 +165,11 @@ defineProps({
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   border-radius: 10px;
   transition: width 1s ease;
   animation: slideIn 1s ease;
