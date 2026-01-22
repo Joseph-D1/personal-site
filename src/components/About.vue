@@ -6,7 +6,7 @@
         <div class="about-card personal">
           <div class="card-icon">👤</div>
           <h4 class="card-title">
-            I love learning, building, and developing myself.
+            I love learning new things, and developing myself.
           </h4>
           <p class="card-content">{{ personalAbout }}</p>
         </div>
