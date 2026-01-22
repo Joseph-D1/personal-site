@@ -52,7 +52,7 @@ const personalInfo = {
   name: "Joseph Dodd",
   jobTitle: "Developer",
   bio: "A developer with experience in web development and cloud infrastructure, and a passion for new technologies and learning.",
-  email: "jreiddodd@gmail.com",
+  email: "hello@doddj.xyz",
   linkedin: "www.linkedin.com/in/joseph-dodd-a69b552bb",
   github: "https://github.com/Joseph-D1",
   imageUrl: "",
@@ -98,10 +98,10 @@ const experiences = ref([
 
 const projects = ref([
   {
-    title: "Website Transition",
+    title: "Website Infrastructure Transition",
     description:
-      "Led a project to transition the company site to a cloud-based solution.",
-    technologies: ["Terraform", "AWS", "Docker"],
+      "Led a project to transition the company site to a cloud-based solution. Used Terraform to declare the infrastructure, and AWS Fargate to run managed Docker containers, which hosted the application. Ran a Redis Cache for session management, and AWS RDS to host the Database for the application.",
+    technologies: ["Terraform", "AWS", "Nginx", "Docker"],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example",
     imageUrl: "",
@@ -109,7 +109,7 @@ const projects = ref([
   {
     title: "Managing Client Sites",
     description:
-      "Managed the maintenence of client sites for over 50 Doctor's Offices, ensuring they were up to date and secure.",
+      "Managed the maintenence of client sites for over 50 Doctor's Offices, ensuring they were up to date and secure. Ran routine security scans to check for out of date plugins, or plugins with CVEs. Handled backups for clients, as well as meeting with clients to discuss changes and new requirements they had for their websites, such as new functionality or content updates.",
     technologies: ["WordPress", "Apache", "HTML", "CSS", "JavaScript"],
     liveUrl: "https://example.com",
     githubUrl: "",
@@ -130,9 +130,9 @@ const skillCategories = ref([
   {
     name: "Backend",
     skills: [
-      { name: "Node.js", level: 70 },
       { name: "PHP", level: 80 },
       { name: "Python", level: 75 },
+      { name: "Node.js", level: 70 },
       { name: "SQL", level: 70 },
       { name: "Apache", level: 85 },
       { name: "Nginx", level: 80 },
