@@ -53,7 +53,7 @@ const personalInfo = {
   jobTitle: "Developer",
   bio: "A developer with experience in web development and cloud infrastructure, and a passion for new technologies and learning.",
   email: "hello@doddj.xyz",
-  linkedin: "www.linkedin.com/in/joseph-dodd-a69b552bb",
+  linkedin: "https://www.linkedin.com/in/joseph-dodd-a69b552bb",
   github: "https://github.com/Joseph-D1",
   imageUrl: "",
 };
