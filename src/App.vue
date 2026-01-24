@@ -115,6 +115,15 @@ const projects = ref([
     githubUrl: "",
     imageUrl: "",
   },
+  {
+    title: "URL Shortner",
+    description:
+      "Weekend project to build a URL shortener. It takes a URL, and gives the user the option to create a custom shortened version. Tracks total clicks on each shortened version of the link.",
+    technologies: ["Python", "FastAPI", "Pydantic", "PyTest"],
+    liveUrl: "https://example.com",
+    githubUrl: "",
+    imageUrl: "",
+  },
 ]);
 
 const skillCategories = ref([
