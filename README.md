@@ -58,7 +58,7 @@ portfolio/
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Joseph-D1/personal-site.git
 cd portfolio
 ```
 
@@ -89,7 +89,7 @@ const personalInfo = {
   name: "Joseph Dodd", // Your full name
   jobTitle: "Developer", // Your job title
   bio: "A developer with...", // Short bio/tagline
-  email: "jreiddodd@gmail.com", // Your email
+  email: "hello@doddj.xyz", // Your email
   linkedin: "www.linkedin.com/in/...", // LinkedIn profile URL
   github: "https://github.com/...", // GitHub profile URL
   imageUrl: "", // Profile image URL (optional)
