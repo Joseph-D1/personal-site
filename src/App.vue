@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
+import { Analytics } from "@vercel/analytics/vue";
 import Header from "./components/Header.vue";
 import About from "./components/About.vue";
 import Experience from "./components/Experience.vue";
@@ -163,6 +164,7 @@ const skillCategories = ref([
 
 <template>
   <div id="home">
+    <Analytics />
     <Header
       :theme="theme"
       :name="personalInfo.name"
