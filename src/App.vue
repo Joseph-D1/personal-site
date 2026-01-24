@@ -72,28 +72,30 @@ const experiences = ref([
   {
     role: "Web Developer",
     company: "Pegasus Health",
-    startDate: "April 2024",
-    endDate: "August 2025",
+    startDate: "May 2025",
+    endDate: "September 2025",
     description:
-      "Helped to implement new features, as well as transition the company site to a cloud-based solution.",
+      "Helped to implement new features, as well as transition the company site to a cloud-based solution. I also managed over 50 WordPress instances for clients all around the south island of New Zealand, ensuring that sites were patched, updated, and secure.",
     achievements: [
       "Used IaC to deploy the company site to AWS.",
       "Implemented new features for the company site.",
       "Created a CI/CD pipeline to automate the deployment of the company site.",
+      "Managed WordPress instances and worked to keep them patched and secure.",
     ],
   },
-  // {
-  //   role: "Previous Role",
-  //   company: "Previous Company",
-  //   startDate: "Jan 2018",
-  //   endDate: "Dec 2019",
-  //   description: "Description of your previous role and what you accomplished.",
-  //   achievements: [
-  //     "Significant achievement",
-  //     "Project you worked on",
-  //     "Skills you developed",
-  //   ],
-  // },
+  {
+    role: "Junior Web Developer",
+    company: "Pegasus Health",
+    startDate: "April 2024",
+    endDate: "July 2025",
+    description:
+      "Brought on as a junior web developer, tasked with maintaining product websites for services that Pegasus Health offers. Worked with CraftCMS, and maintained AWS EC2 Instances that hosted the web servers. Worked with teams across the company to implement features and fix bugs.",
+    achievements: [
+      "Worked with different teams to meet expectations",
+      "Created bespoke modules for CraftCMS",
+      "Created forms to aide efficiency within the buisness",
+    ],
+  },
 ]);
 
 const projects = ref([
@@ -102,16 +104,16 @@ const projects = ref([
     description:
       "Led a project to transition the company site to a cloud-based solution. Used Terraform to declare the infrastructure, and AWS Fargate to run managed Docker containers, which hosted the application. Ran a Redis Cache for session management, and AWS RDS to host the Database for the application.",
     technologies: ["Terraform", "AWS", "Nginx", "Docker"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example",
+    liveUrl: "",
+    githubUrl: "",
     imageUrl: "",
   },
   {
     title: "Managing Client Sites",
     description:
-      "Managed the maintenence of client sites for over 50 Doctor's Offices, ensuring they were up to date and secure. Ran routine security scans to check for out of date plugins, or plugins with CVEs. Handled backups for clients, as well as meeting with clients to discuss changes and new requirements they had for their websites, such as new functionality or content updates.",
+      "Managed the maintenence of client WordPress sites for over 50 Doctor's Offices, ensuring they were up to date and secure. Ran routine security scans to check for out of date plugins, or plugins with CVEs. Handled backups for clients, as well as meeting with clients to discuss changes and new requirements they had for their websites, such as new functionality or content updates.",
     technologies: ["WordPress", "Apache", "HTML", "CSS", "JavaScript"],
-    liveUrl: "https://example.com",
+    liveUrl: "",
     githubUrl: "",
     imageUrl: "",
   },
@@ -120,9 +122,9 @@ const projects = ref([
     description:
       "Weekend project to build a URL shortener. It takes a URL, and gives the user the option to create a custom shortened version. Tracks total clicks on each shortened version of the link.",
     technologies: ["Python", "FastAPI", "Pydantic", "PyTest"],
-    liveUrl: "https://example.com",
-    githubUrl: "",
-    imageUrl: "",
+    // liveUrl: "",
+    githubUrl: "https://github.com/Joseph-D1/url-shortner",
+    // imageUrl: "",
   },
 ]);
 
