@@ -23,7 +23,7 @@
                 {{ tech }}
               </span>
             </div>
-            <!-- <div class="project-links">
+            <div class="project-links">
               <a
                 v-if="project.liveUrl"
                 :href="project.liveUrl"
@@ -40,7 +40,7 @@
               >
                 GitHub
               </a>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
