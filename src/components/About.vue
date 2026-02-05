@@ -4,15 +4,17 @@
       <h2 class="section-title">Who am I?</h2>
       <div class="about-sections">
         <div class="about-card personal">
-          <div class="card-icon">👤</div>
-          <h4 class="card-title">
-            I love learning new things, and developing myself.
-          </h4>
+          <div>
+            <h4 class="card-title">
+              <div class="card-icon">👤</div>
+              I love learning new things, and developing myself.
+            </h4>
+          </div>
           <p class="card-content">{{ personalAbout }}</p>
         </div>
         <div class="about-card professional">
-          <div class="card-icon">💼</div>
           <h4 class="card-title">
+            <div class="card-icon">💼</div>
             I have experience in web development and cloud infrastructure.
           </h4>
           <p class="card-content">{{ professionalAbout }}</p>
@@ -209,7 +211,8 @@ defineProps({
 .card-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  /* display: block; */
+  padding: 0 1rem 0 0;
+  display: inline-block;
 }
 
 .card-title {
